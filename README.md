@@ -1,4 +1,18 @@
-# a-stock-data
+# a-stock-data (fork, repackaged as Python module)
+
+> **Fork notice** — This is a fork of [`simonlin1212/a-stock-data`](https://github.com/simonlin1212/a-stock-data) at commit `9379ab90d0219312b5f4845cd8c97502f40b0806`. The original `SKILL.md` (Claude Skill format) has been extracted into a standard Python package `a_stock_data` so it can be `pip install`-ed and imported directly. Original SKILL.md, LICENSE (Apache 2.0), and CHANGELOG are preserved unchanged.
+>
+> **Use as Python package:**
+> ```bash
+> pip install git+https://github.com/ruiyu2002/a-stock-data.git@v3.2.2.post0
+> ```
+> ```python
+> from a_stock_data import tencent_quote, mootdx_kline, eastmoney_stock_news
+> ```
+>
+> **Use as Claude Skill (original form):** the upstream `SKILL.md` is still here, drop it into `~/.claude/skills/a-stock-data/` as the upstream README describes.
+
+---
 
 A 股全栈数据工具包 — 7 层架构 · 27 个端点 · 13 个数据源 · 零第三方数据封装依赖
 

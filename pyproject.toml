@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a-stock-data"
+version = "3.2.2.post0"
+description = "A 股全栈数据工具包 — fork of simonlin1212/a-stock-data SKILL, repackaged as a Python module"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+authors = [
+    { name = "Original SKILL author: simonlin1212" },
+]
+dependencies = [
+    "mootdx>=0.10",
+    "requests>=2.31",
+    "pandas>=2.0",
+    "stockstats>=0.6",
+]
+
+[project.urls]
+"Upstream" = "https://github.com/simonlin1212/a-stock-data"
+"Fork" = "https://github.com/ruiyu2002/a-stock-data"
+
+[tool.setuptools.packages.find]
+include = ["a_stock_data*"]
